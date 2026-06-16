@@ -1,6 +1,6 @@
 package org.example.tickr.user;
 
-enum UserRole {
+public enum UserRole {
     USER("Пользователь"),
     ADMIN("Администратор"),
     PREMIUM_USER ("Премиум пользователь");

@@ -1,6 +1,7 @@
 package org.example.tickr.user;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -18,8 +19,11 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long userId;
 
+    @NotNull
     private String userName;
+    @NotNull
     private String userEmail;
+    @NotNull
     private String userPassword;
     private LocalDateTime userAtCreated;
     private LocalDateTime userAtUpdate;
