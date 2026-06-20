@@ -1,0 +1,5 @@
+workspace:
+  id: 1f4bc3a7-64bf-4114-8ff5-298b028485eb
+cloudResources:
+  collections:
+    ../postman/collections/Tickr: 37671848-2ee908c1-f561-4245-b469-e8d99456a3e7

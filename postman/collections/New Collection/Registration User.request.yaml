@@ -1,0 +1,16 @@
+$kind: http-request
+name: Registration User
+url: http://localhost:8080/user/registration
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"userName\" : \"sdgsdfghsdfh\",\r
+
+    \  \"userEmail\" : \"gashsdfhf\",\r
+
+    \  \"userPassword\" : \"sgdfhdfhj\"\r
+
+    }"
+order: 1781952437982

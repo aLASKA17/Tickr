@@ -9,7 +9,7 @@ import static java.lang.System.out;
 @Service
 @RequiredArgsConstructor
 public class UserService {
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public void createUser(UserResponse userResponse) {
         if (userRepository.findByUserName(userResponse.getUserName()).isPresent() ||
@@ -21,7 +21,7 @@ public class UserService {
         User user = new User();
         user.setUserName(userResponse.getUserName());
         user.setUserEmail(userResponse.getUserEmail());
-        user.setUserPassword(user.getUserPassword());
+        user.setUserPassword(userResponse.getUserPassword());
         user.setUserRole(UserRole.USER);
         userRepository.save(user);
     }

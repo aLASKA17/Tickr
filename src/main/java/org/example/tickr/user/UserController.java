@@ -15,6 +15,8 @@ public class UserController {
 
     @PostMapping("/registration")
     public void registration(@RequestBody UserResponse userResponse) {
+        System.out.println("Received: " + userResponse);
+        System.out.println("Password: " + userResponse.getUserPassword());
         userService.createUser(userResponse);
     }
 
